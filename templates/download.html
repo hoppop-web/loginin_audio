@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Download Audio</title>
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/style2.css') }}">
+  </head>
+  <body>
+      <div class="box">
+            <div class="left"></div>
+            <div class="right">
+                <h4>音频下载 </h4>
+                <h4>您的UID: {{ uid }}</h4>
+                <form method="post" action="">
+                    <h4><a href="{{ url_for('static', filename= output_filename) }}">点我下载 </a></h4>
+                </form>
+                <div class="fn">
+                </div>
+            </div>
+      </div>
+  </body>
+</html>
